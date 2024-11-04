@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .sidebar {
+            width: 250px;
+            background-color: #106dca;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #eee8e8;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #131212;
+            color: #f8f5f5;
+        }
+        .container {
+            padding: 10px 25px; /* Padding di dalam konten */
+            margin-top: 40px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: 25px;
+        }
+       
+     
+        
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-center">Universitas Pamulang</h4>
+        <div class="text-center mb-4">
+            <img alt="User Avatar" class="rounded-circle" height="70" src="AB 108.jpeg" width="70"/>
+            <p>Welcome, Grivi Desky Sompie<br><small>Administrator</small></p>
+        </div>
+        <a href="index.html">
+            <i class="fas fa-home"></i> Dashboard
+        </a>
+        <h4 class="text-center">Menu Karyawan</h4>
+        <a href="data_karyawan.html">
+            <i class="fas fa-users"></i> Karyawan
+        </a>
+        <a href="data_jabatan.html">
+            <i class="fas fa-briefcase"></i> Jabatan
+        </a>
+        <a href="data_divisi.html">
+            <i class="fas fa-sitemap"></i> Divisi
+        </a>
+        <h4 class="text-center">Menu Absensi</h4>    
+        <a href="absensi.html">
+            <i class="fas fa-calendar-check"></i> Absensi
+        </a>
+        <a href="izin.html">
+            <i class="fas fa-check-square"></i> Izin
+        </a>
+        <a href="lembur.html">
+            <i class="fas fa-clock"></i> Lembur
+        </a>
+    </div>
+</nav>
+</div>
+    <div class="container mt-4">
+        <h2>Daftar Lembur Karyawan</h2>
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <!-- Show Entries Dropdown -->
+            <div>
+                <label>Show
+                    <select class="form-select form-select-sm d-inline w-auto">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    entries
+                </label>
+            </div>
+            <!-- Search Input -->
+            <div>
+                <label>Search: <input type="search" class="form-control form-control-sm" placeholder="Search"></label>
+            </div>
+            <!-- Button Ubah Status -->
+            <button class="btn btn-primary btn-status">Ubah Status</button>
+        </div>
+        
+        <div class="table-container">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Tanggal</th>
+                        <th>Jam Lembur <br>Mulai | Berakhir</th>
+                        <th>Keperluan Lembur</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Yovan Fiqri</td>
+                        <td>2023-05-10</td>
+                        <td>10:35:00 | 15:35:00</td>
+                        <td>213</td>
+                        <td>Menunggu Konfirmasi</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Yovan Fiqri</td>
+                        <td>2023-05-09</td>
+                        <td>11:05:00 | 04:05:00</td>
+                        <td>g</td>
+                        <td>Disetujui</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Yovan Fiqri</td>
+                        <td>2023-05-04</td>
+                        <td>17:00:00 | 17:00:00</td>
+                        <td>lembur</td>
+                        <td>Disetujui</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Yovan Fiqri</td>
+                        <td>2023-05-04</td>
+                        <td>17:00:00 | 21:37:00</td>
+                        <td>Printer</td>
+                        <td>Disetujui</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Yovan Fiqri</td>
+                        <td>2023-04-30</td>
+                        <td>04:00:00 | 04:00:00</td>
+                        <td>123</td>
+                        <td>Disetujui</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

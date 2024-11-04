@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .sidebar {
+            width: 250px;
+            background-color: #106dca;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #eee8e8;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #131212;
+            color: #f8f5f5;
+        }
+        .container {
+            padding: 10px 25px; /* Padding di dalam konten */
+            margin-top: 40px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: 25px;
+        }
+       
+     
+        
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-center">Universitas Pamulang</h4>
+        <div class="text-center mb-4">
+            <img alt="User Avatar" class="rounded-circle" height="70" src="AB 108.jpeg" width="70"/>
+            <p>Welcome, Grivi Desky Sompie<br><small>Administrator</small></p>
+        </div>
+        <a href="index.html">
+            <i class="fas fa-home"></i> Dashboard
+        </a>
+        <h4 class="text-center">Menu Karyawan</h4>
+        <a href="data_karyawan.html">
+            <i class="fas fa-users"></i> Karyawan
+        </a>
+        <a href="data_jabatan.html">
+            <i class="fas fa-briefcase"></i> Jabatan
+        </a>
+        <a href="data_divisi.html">
+            <i class="fas fa-sitemap"></i> Divisi
+        </a>
+        <h4 class="text-center">Menu Absensi</h4>    
+        <a href="absensi.html">
+            <i class="fas fa-calendar-check"></i> Absensi
+        </a>
+        <a href="izin.html">
+            <i class="fas fa-check-square"></i> Izin
+        </a>
+        <a href="lembur.html">
+            <i class="fas fa-clock"></i> Lembur
+        </a>
+    </div>
+</nav>
+</div>
+    <div class="container mt-4">
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+               Forms
+              </a>
+              <div class="collapse navbar-collapse">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  Karyawan
+                 </a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">
+                  Tambah Data Karyawan
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <div class="d-flex">
+                <img alt="User Avatar" class="rounded-circle" height="50" src="AB 108.jpeg" width="50"/>
+            </nav>
+            <div class="form-container mt-4">
+             <h5>
+              Tambah Data Karyawan
+             </h5>
+             <form>
+              <div class="mb-3">
+               <label class="form-label" for="namaLengkap">
+                Nama Lengkap
+               </label>
+               <input class="form-control" id="namaLengkap" type="text"/>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="jenisKelamin">
+                Jenis Kelamin
+               </label>
+               <select class="form-select" id="jenisKelamin">
+                <option selected="">
+                 Pilih...
+                </option>
+                <option value="1">
+                 Laki-laki
+                </option>
+                <option value="2">
+                 Perempuan
+                </option>
+               </select>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="email">
+                Email
+               </label>
+               <input class="form-control" id="email" type="email"/>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="noHP">
+                No HP
+               </label>
+               <input class="form-control" id="noHP" type="text"/>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="alamat">
+                Alamat
+               </label>
+               <textarea class="form-control" id="alamat" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="password">
+                Password
+               </label>
+               <input class="form-control" id="password" type="password"/>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="jabatan">
+                Jabatan
+               </label>
+               <select class="form-select" id="jabatan">
+                <option selected="">
+                 Pilih...
+                </option>
+                <option value="1">
+                 Manager
+                </option>
+                <option value="2">
+                 Staff
+                </option>
+               </select>
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for="divisi">
+                Divisi
+               </label>
+               <select class="form-select" id="divisi">
+                <option selected="">
+                 Pilih...
+                </option>
+                <option value="1">
+                 HRD
+                </option>
+                <option value="2">
+                 IT
+                </option>
+               </select>
+              </div>
+              <div class="d-flex justify-content-end">
+               <button class="btn btn-success me-2" type="submit">
+                Simpan
+               </button>
+               <button class="btn btn-danger" type="reset">
+                Batal
+               </button>
+              </div>
+             </form>
+            </div>
+           </div>
+          </div>
+         </body>
+        </html>
